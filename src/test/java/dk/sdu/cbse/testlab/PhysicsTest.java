@@ -1,0 +1,1 @@
+package dk.sdu.cbse.testlab; import org.junit.jupiter.api.Test; import static org.junit.jupiter.api.Assertions.*; class PhysicsTest{@Test void movesPlayer(){assertEquals(15,Physics.move(10,5,1));}@Test void detectsCollision(){assertTrue(Physics.collides(0,0,10,15,0,10));assertFalse(Physics.collides(0,0,5,20,0,5));}}

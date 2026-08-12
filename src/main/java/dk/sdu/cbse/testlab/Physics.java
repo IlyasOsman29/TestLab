@@ -1,0 +1,1 @@
+package dk.sdu.cbse.testlab; public final class Physics{public static double move(double p,double v,double dt){return p+v*dt;} public static boolean collides(double x1,double y1,double r1,double x2,double y2,double r2){double dx=x1-x2,dy=y1-y2;return Math.sqrt(dx*dx+dy*dy)<=r1+r2;}}
