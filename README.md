@@ -1,9 +1,14 @@
 # TestLab
 
-TestLab uses JUnit 5 to test actual Asteroids component behaviour without opening a GUI. `PlayerProcessorTest` supplies known input and frame time, then checks the Player entity's rotation and movement. `CollisionDetectorTest` verifies the same circle-collision rule used by the game.
+This lab contains JUnit 5 tests for two Asteroids components.
 
-```powershell
-mvn clean test package
+- `PlayerProcessorTest` checks rotation and movement with known input.
+- `CollisionDetectorTest` checks when two circles overlap.
+
+Run the tests with JDK 21 and Maven:
+
+```text
+mvn clean verify
 ```
 
-No Mockito dependency is needed because the component consumes the small real `GameData` object directly.
+The tests use the real `GameData` class, so Mockito is not needed here.
